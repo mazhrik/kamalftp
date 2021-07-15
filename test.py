@@ -70,7 +70,6 @@ class FTP_Client(object):
                 temp_path_list.append(temp_path)
                 self.chdir(dir)  # change to directory if not exist create one
 
-            # print(temp_path_list)
 
         except Exception as e:
             print(e)
@@ -118,9 +117,7 @@ obj.connect()
 filename = 'istockphoto-535695503-612x612'
 var = (obj.upload_file('/home/zohaib/Desktop/', filename, 'ess_frs'))
 url = 'https://' + var + '/' + filename
-# print(url)
 print('larki.jpeg')
 
 obj.newfunc()
 
-# print(obj.newfunc())
